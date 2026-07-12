@@ -1,0 +1,8 @@
+{
+  "name": "Bimbel Masuk Unhan",
+  "description": "Platform tryout dan bimbel online untuk persiapan masuk Universitas Pertahanan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
