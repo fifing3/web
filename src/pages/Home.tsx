@@ -15,9 +15,26 @@ export default function Home() {
     }
   };
 
+  const homeSchema = {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Bimbel Masuk Unhan",
+    "url": "https://bmu.app",
+    "logo": "https://bmu.app/logo.png",
+    "description": "Bimbingan belajar masuk Universitas Pertahanan RI dengan kelas online, modul lengkap, tryout, pembahasan soal, dan mentor berpengalaman.",
+    "sameAs": [
+      "https://instagram.com/masukunhan"
+    ]
+  };
+
   return (
     <>
-      <SEO title="Bimbel Masuk Unhan | Program Persiapan D3, S1 & S2" description="Bimbel intensif dan interaktif persiapan seleksi Universitas Pertahanan." />
+      <SEO 
+        title="Bimbel Masuk UNHAN | Bimbingan Intensif Seleksi Universitas Pertahanan" 
+        description="Bimbingan belajar masuk Universitas Pertahanan RI dengan kelas online, modul lengkap, tryout, pembahasan soal, dan mentor berpengalaman." 
+        url="/"
+        schema={homeSchema}
+      />
     <div className="flex flex-col w-full">
 
       {/* Information Ticker */}
@@ -136,7 +153,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 items-center">
             <div className="bg-gradient-to-br from-white to-blue-50 rounded-3xl overflow-hidden shadow-xl shadow-blue-900/5 border border-blue-50 flex items-center justify-center md:h-[400px] lg:h-full relative group">
-              <img src="/lulus-unhan.png" alt="40+ Peserta Alumni Lolos Unhan" className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500" />
+              <img src="/lulus-unhan.png" alt="40+ Peserta Alumni Lolos Unhan" loading="lazy" width="600" height="400" className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="bg-gradient-to-br from-white to-blue-50 rounded-3xl p-5 md:p-8 shadow-xl shadow-blue-900/5 border border-blue-50">
               <h3 className="text-[20px] md:text-2xl font-bold text-blue-900 mb-3 md:mb-4">Mengapa Memilih Kami?</h3>
@@ -185,7 +202,7 @@ export default function Home() {
               <div key={idx} className="bg-gradient-to-br from-white to-blue-50 rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-shadow flex flex-col">
                 {/* Card Header/Banner */}
                 <div className={`h-32 relative bg-gradient-to-br ${modul.gradient}`}>
-                  <img src={modul.image} alt={modul.title} className="w-full h-full object-cover opacity-40 mix-blend-overlay" />
+                  <img src={modul.image} alt={modul.title} loading="lazy" width="400" height="200" className="w-full h-full object-cover opacity-40 mix-blend-overlay" />
                   <div className="absolute top-3 left-3 flex gap-2">
                     <span className="bg-white/20 backdrop-blur-md text-white text-[10px] md:text-xs font-bold px-2 py-1 rounded-full flex items-center gap-1">
                       <Book size={12} /> {modul.type}
@@ -241,7 +258,7 @@ export default function Home() {
               <div key={idx} className="bg-gradient-to-br from-white to-blue-50 rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-shadow flex flex-col">
                 {/* Card Header/Banner */}
                 <div className={`h-32 relative bg-gradient-to-br ${pkg.gradient}`}>
-                  <img src={pkg.image} alt={pkg.title} className="w-full h-full object-cover opacity-40 mix-blend-overlay" />
+                  <img src={pkg.image} alt={pkg.title} loading="lazy" width="400" height="200" className="w-full h-full object-cover opacity-40 mix-blend-overlay" />
                   <div className="absolute top-3 left-3 flex gap-2">
                     <span className="bg-white/20 backdrop-blur-md text-white text-[10px] md:text-xs font-bold px-2 py-1 rounded-full flex items-center gap-1">
                       <Book size={12} /> {pkg.type}

@@ -12,9 +12,33 @@ export default function KelasOnline() {
     c.description.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Beranda",
+        "item": "https://bmu.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Kelas Online",
+        "item": "https://bmu.app/kelas-online"
+      }
+    ]
+  };
+
   return (
     <>
-      <SEO title="Kelas Online | Bimbel Masuk Unhan" description="Belajar langsung bersama mentor berpengalaman untuk menghadapi seleksi UNHAN." />
+      <SEO 
+        title="Kelas Online Intensif UNHAN | Bimbel Masuk UNHAN" 
+        description="Belajar langsung secara intensif bersama mentor berpengalaman lulusan Universitas Pertahanan untuk menghadapi seleksi masuk UNHAN secara terarah." 
+        url="/kelas-online"
+        schema={breadcrumbSchema}
+      />
     <div className="flex flex-col w-full pb-20">
       {/* Breadcrumb */}
       <div className="bg-white border-b border-slate-200">
@@ -39,7 +63,7 @@ export default function KelasOnline() {
             <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
               <Search className="h-5 w-5 text-slate-400" />
             </div>
-            <input
+            <input aria-label="Cari"
               type="text"
               className="block w-full pl-11 pr-4 py-3 md:py-4 bg-white border border-slate-200 rounded-2xl text-slate-900 placeholder-slate-500 focus:ring-4 focus:ring-blue-500/30 transition-shadow shadow-sm"
               placeholder="Cari kelas (contoh: TPA Intensif)..."

@@ -12,9 +12,33 @@ export default function Modul() {
     m.description.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Beranda",
+        "item": "https://bmu.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Modul Pembelajaran",
+        "item": "https://bmu.app/modul"
+      }
+    ]
+  };
+
   return (
     <>
-      <SEO title="Semua Modul | Bimbel Masuk Unhan" description="Pelajari seluruh materi persiapan seleksi UNHAN dengan modul yang disusun secara sistematis dan mudah dipahami." />
+      <SEO 
+        title="Modul Materi UNHAN Lengkap | Bimbel Masuk UNHAN" 
+        description="Pelajari seluruh materi persiapan seleksi Universitas Pertahanan dengan modul pembelajaran lengkap yang disusun sistematis dan mudah dipahami oleh pemula." 
+        url="/modul"
+        schema={breadcrumbSchema}
+      />
     <div className="flex flex-col w-full pb-20">
       {/* Breadcrumb */}
       <div className="bg-white border-b border-slate-200">
@@ -39,7 +63,7 @@ export default function Modul() {
             <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
               <Search className="h-5 w-5 text-slate-400" />
             </div>
-            <input
+            <input aria-label="Cari"
               type="text"
               className="block w-full pl-11 pr-4 py-3 md:py-4 bg-white border-0 rounded-2xl text-slate-900 placeholder-slate-500 focus:ring-4 focus:ring-blue-500/30 transition-shadow shadow-lg"
               placeholder="Cari modul (contoh: TPA, Bahasa Inggris)..."

@@ -12,9 +12,33 @@ export default function Tryout() {
     p.description.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Beranda",
+        "item": "https://bmu.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Paket Tryout",
+        "item": "https://bmu.app/tryout"
+      }
+    ]
+  };
+
   return (
     <>
-      <SEO title="Paket Tryout | Bimbel Masuk Unhan" description="Latihan soal sesuai sistem seleksi UNHAN lengkap dengan pembahasan dan nilai." />
+      <SEO 
+        title="Paket Tryout UNHAN Terbaik | Simulasi Ujian & Pembahasan" 
+        description="Latihan soal tryout masuk Universitas Pertahanan sesuai sistem CBT aslinya. Lengkap dengan pembahasan soal dan penilaian otomatis untuk mengukur kesiapanmu." 
+        url="/tryout"
+        schema={breadcrumbSchema}
+      />
     <div className="flex flex-col w-full pb-20">
       {/* Breadcrumb */}
       <div className="bg-white border-b border-slate-200">
@@ -40,7 +64,7 @@ export default function Tryout() {
             <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
               <Search className="h-5 w-5 text-slate-400" />
             </div>
-            <input
+            <input aria-label="Cari"
               type="text"
               className="block w-full pl-11 pr-4 py-3 md:py-4 bg-white/10 border border-white/20 rounded-2xl text-white placeholder-slate-400 focus:bg-white focus:text-slate-900 focus:placeholder-slate-500 focus:ring-4 focus:ring-blue-500/30 transition-all shadow-lg backdrop-blur-md"
               placeholder="Cari paket tryout..."
