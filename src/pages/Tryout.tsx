@@ -92,7 +92,7 @@ export default function Tryout() {
                   </div>
                   
                   <div className="flex flex-col gap-2 mt-auto">
-                    <a href="https://masuk-unhan.myr.id/bootcamp/" target="_blank" rel="noopener noreferrer" className="w-full bg-blue-700 text-white text-[13px] md:text-sm font-semibold h-11 md:h-auto px-4 py-2.5 rounded-xl hover:bg-blue-800 transition-colors flex items-center justify-center gap-2">
+                    <a href="https://app.masukunhan.com/auth/register" target="_blank" rel="noopener noreferrer" className="w-full bg-blue-700 text-white text-[13px] md:text-sm font-semibold h-11 md:h-auto px-4 py-2.5 rounded-xl hover:bg-blue-800 transition-colors flex items-center justify-center gap-2">
                        <LogIn size={18} /> Daftar
                     </a>
                   </div>

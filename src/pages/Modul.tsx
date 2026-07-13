@@ -56,25 +56,25 @@ export default function Modul() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {filteredModules.map((modul, idx) => (
               <div key={idx} className="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col group">
-                <div className="h-40 bg-slate-100 relative overflow-hidden flex items-center justify-center p-6 text-slate-400 group-hover:bg-blue-50 transition-colors">
+                <div className="h-32 bg-slate-100 relative overflow-hidden flex items-center justify-center p-4 text-slate-400 group-hover:bg-blue-50 transition-colors">
                   {modul.type === 'Gratis' ? (
-                     <div className="absolute top-4 right-4 bg-emerald-500 text-white text-[10px] md:text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+                     <div className="absolute top-3 right-3 bg-emerald-500 text-white text-[10px] md:text-xs font-bold px-2 py-1 rounded-full shadow-sm">
                        GRATIS
                      </div>
                   ) : (
-                     <div className="absolute top-4 right-4 bg-amber-500 text-white text-[10px] md:text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+                     <div className="absolute top-3 right-3 bg-amber-500 text-white text-[10px] md:text-xs font-bold px-2 py-1 rounded-full shadow-sm">
                        PREMIUM
                      </div>
                   )}
-                  <Book size={48} className="text-blue-200 group-hover:scale-110 transition-transform duration-500" />
+                  <Book size={40} className="text-blue-200 group-hover:scale-110 transition-transform duration-500" />
                 </div>
-                <div className="p-4 md:p-6 flex flex-col flex-grow">
-                  <h3 className="font-bold text-[18px] md:text-lg text-slate-900 mb-2 leading-tight line-clamp-2">{modul.title}</h3>
-                  <div className="flex items-center gap-4 text-[11px] md:text-xs text-slate-500 mb-3 md:mb-4">
-                    <span className="flex items-center gap-1"><Book size={14} /> {modul.bank}</span>
-                    <span className="flex items-center gap-1"><Star size={14} className="text-amber-400" /> 4.9</span>
+                <div className="p-4 md:p-5 flex flex-col flex-grow">
+                  <h3 className="font-bold text-[16px] md:text-lg text-slate-900 mb-1 leading-tight line-clamp-2">{modul.title}</h3>
+                  <div className="flex items-center gap-4 text-[11px] md:text-xs text-slate-500 mb-2 md:mb-3">
+                    <span className="flex items-center gap-1"><Book size={12} /> {modul.bank}</span>
+                    <span className="flex items-center gap-1"><Star size={12} className="text-amber-400" /> 4.9</span>
                   </div>
-                  <p className="text-slate-600 text-[13px] md:text-sm mb-5 md:mb-6 flex-grow line-clamp-3 text-justify">{modul.description}</p>
+                  <p className="text-slate-600 text-[12px] md:text-sm mb-4 md:mb-5 flex-grow line-clamp-3 text-justify">{modul.description}</p>
                   
                   <div className="flex flex-col gap-2 mt-auto">
                     <a href="https://masuk-unhan.myr.id/ebook/" target="_blank" rel="noopener noreferrer" className="w-full bg-blue-700 text-white text-[13px] md:text-sm font-semibold h-11 md:h-auto px-4 py-2.5 rounded-xl hover:bg-blue-800 transition-colors flex items-center justify-center gap-2">

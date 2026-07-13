@@ -13,8 +13,8 @@ export default function Layout() {
           <div className="flex justify-between h-20 items-center">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center text-blue-700">
-                <ShieldCheck size={24} />
+              <div className="w-10 h-10 flex items-center justify-center shrink-0">
+                <img src="/logo.png" alt="Logo Bimbel Masuk Unhan" className="w-full h-full object-contain" />
               </div>
               <div className="font-bold flex flex-col">
                 <span className="text-lg leading-tight text-blue-900 uppercase">BIMBEL MASUK</span>
@@ -84,8 +84,8 @@ export default function Layout() {
             <div className="lg:col-span-6">
               <div className="bg-blue-800 rounded-2xl p-5 md:p-6 border border-blue-700">
                 <div className="flex items-center gap-3 mb-3 md:mb-4">
-                  <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center text-blue-900 shrink-0">
-                    <ShieldCheck size={24} />
+                  <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center text-blue-900 shrink-0 p-1">
+                    <img src="/logo.png" alt="Logo Bimbel Masuk Unhan" className="w-full h-full object-contain" />
                   </div>
                   <div className="font-bold flex flex-col">
                     <span className="text-[16px] md:text-lg leading-tight text-white">Bimbel Masuk</span>

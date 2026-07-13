@@ -18,14 +18,31 @@ export default function Home() {
   return (
     <>
       <SEO title="Bimbel Masuk Unhan | Program Persiapan D3, S1 & S2" description="Bimbel intensif dan interaktif persiapan seleksi Universitas Pertahanan." />
-      <SEO title="Bimbel Masuk Unhan | Program Persiapan D3, S1 & S2" description="Bimbel intensif dan interaktif persiapan seleksi Universitas Pertahanan." />
     <div className="flex flex-col w-full">
 
+      {/* Information Ticker */}
+      <section className="w-full px-4 py-2 md:py-3 bg-gradient-to-b from-blue-50/50 to-transparent">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-center bg-white border border-blue-100 rounded-xl shadow-sm h-9 md:h-12 overflow-hidden relative pause-on-hover">
+            {/* Fixed Badge */}
+            <div className="z-10 bg-blue-700 text-white font-bold text-[11px] md:text-sm px-3 md:px-5 h-full flex items-center shrink-0 relative shadow-[4px_0_15px_rgba(0,0,0,0.1)]">
+              <span className="mr-1.5">📢</span> INFORMASI
+            </div>
+            {/* Scrolling Text */}
+            <div className="flex-1 overflow-hidden flex items-center h-full text-blue-900 bg-blue-50/30">
+              <div className="animate-ticker pl-[100%] text-[13px] md:text-[15px] font-bold">
+                Selamat kepada 40+ peserta alumni Bimbel Masuk Unhan (BMU) telah lolos masuk Universitas Pertahanan Tahun 2026 (Cohort 7) 🎉
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Hero Section */}
-      <section className="pt-28 pb-10 md:pb-12 px-4 relative overflow-hidden bg-gradient-to-b from-blue-50/50 to-slate-50">
+      <section className="pt-6 md:pt-10 pb-10 md:pb-12 px-4 relative overflow-hidden bg-gradient-to-b from-transparent to-slate-50">
         <div className="max-w-5xl mx-auto relative z-10">
           <div className="bg-gradient-to-br from-white to-blue-50 rounded-3xl p-8 md:p-12 shadow-xl shadow-blue-900/5 text-center border border-blue-50">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-100 text-slate-600 text-sm font-medium mb-4">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-100 text-slate-600 text-sm font-bold mb-4">
               <span className="w-2 h-2 rounded-full bg-blue-600"></span>
               BIMBEL TERBESAR MASUK UNHAN
             </div>
@@ -118,11 +135,8 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 items-center">
-            <div className="bg-gradient-to-br from-white to-blue-50 rounded-3xl p-6 md:p-8 shadow-xl shadow-blue-900/5 border border-blue-50 flex items-center justify-center aspect-square md:aspect-auto md:h-[400px] lg:h-full">
-              <div className="text-center">
-                <ShieldCheck size={60} className="md:w-20 md:h-20 text-blue-700 mx-auto mb-3 md:mb-4" />
-                <h3 className="text-[20px] md:text-2xl font-bold text-blue-900">BIMBEL MASUK<br/>UNHAN</h3>
-              </div>
+            <div className="bg-gradient-to-br from-white to-blue-50 rounded-3xl overflow-hidden shadow-xl shadow-blue-900/5 border border-blue-50 flex items-center justify-center aspect-square md:aspect-auto md:h-[400px] lg:h-full relative group">
+              <img src="/lulus-unhan.png" alt="40+ Peserta Alumni Lolos Unhan" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="bg-gradient-to-br from-white to-blue-50 rounded-3xl p-5 md:p-8 shadow-xl shadow-blue-900/5 border border-blue-50">
               <h3 className="text-[20px] md:text-2xl font-bold text-blue-900 mb-3 md:mb-4">Mengapa Memilih Kami?</h3>
@@ -170,28 +184,28 @@ export default function Home() {
             {modules.map((modul, idx) => (
               <div key={idx} className="bg-gradient-to-br from-white to-blue-50 rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-shadow flex flex-col">
                 {/* Card Header/Banner */}
-                <div className={`h-48 relative bg-gradient-to-br ${modul.gradient}`}>
+                <div className={`h-32 relative bg-gradient-to-br ${modul.gradient}`}>
                   <img src={modul.image} alt={modul.title} className="w-full h-full object-cover opacity-40 mix-blend-overlay" />
-                  <div className="absolute top-4 left-4 flex gap-2">
-                    <span className="bg-white/20 backdrop-blur-md text-white text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1">
-                      <Book size={14} /> {modul.type}
+                  <div className="absolute top-3 left-3 flex gap-2">
+                    <span className="bg-white/20 backdrop-blur-md text-white text-[10px] md:text-xs font-bold px-2 py-1 rounded-full flex items-center gap-1">
+                      <Book size={12} /> {modul.type}
                     </span>
-                    <span className="bg-white/20 backdrop-blur-md text-white text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1">
-                      <BarChart3 size={14} /> {modul.bank}
+                    <span className="bg-white/20 backdrop-blur-md text-white text-[10px] md:text-xs font-bold px-2 py-1 rounded-full flex items-center gap-1">
+                      <BarChart3 size={12} /> {modul.bank}
                     </span>
                   </div>
-                  <div className="absolute bottom-4 inset-x-0 text-center">
-                    <span className="text-white/80 font-bold tracking-wider text-sm">MODUL PEMBELAJARAN</span>
+                  <div className="absolute bottom-3 inset-x-0 text-center">
+                    <span className="text-white/80 font-bold tracking-wider text-xs">MODUL PEMBELAJARAN</span>
                   </div>
                 </div>
                 
                 {/* Card Body */}
-                <div className="p-4 md:p-6 flex flex-col flex-grow">
-                  <h3 className="font-bold text-[18px] md:text-lg text-blue-900 mb-2 leading-tight min-h-[3.5rem]">{modul.title}</h3>
-                  <div className="text-[11px] md:text-xs text-slate-500 mb-3 md:mb-4">MODUL • MATERI • SOAL • PEMBAHASAN</div>
-                  <p className="text-slate-600 text-[13px] md:text-sm mb-5 md:mb-6 flex-grow text-justify">{modul.description}</p>
+                <div className="p-4 md:p-5 flex flex-col flex-grow">
+                  <h3 className="font-bold text-[16px] md:text-lg text-blue-900 mb-1 leading-tight">{modul.title}</h3>
+                  <div className="text-[11px] md:text-xs text-slate-500 mb-2 md:mb-3">MODUL • MATERI • SOAL • PEMBAHASAN</div>
+                  <p className="text-slate-600 text-[12px] md:text-sm mb-4 md:mb-5 flex-grow text-justify">{modul.description}</p>
                   
-                  <div className="flex items-center justify-between border-t border-slate-100 mt-auto pt-4 md:pt-5">
+                  <div className="flex items-center justify-between border-t border-slate-100 mt-auto pt-3 md:pt-4">
                     <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-emerald-50 text-emerald-700 text-[12px] md:text-sm font-bold rounded-full border border-emerald-100">
                       <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
                       Tersedia
@@ -226,33 +240,33 @@ export default function Home() {
             {packages.map((pkg, idx) => (
               <div key={idx} className="bg-gradient-to-br from-white to-blue-50 rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-shadow flex flex-col">
                 {/* Card Header/Banner */}
-                <div className={`h-48 relative bg-gradient-to-br ${pkg.gradient}`}>
+                <div className={`h-32 relative bg-gradient-to-br ${pkg.gradient}`}>
                   <img src={pkg.image} alt={pkg.title} className="w-full h-full object-cover opacity-40 mix-blend-overlay" />
-                  <div className="absolute top-4 left-4 flex gap-2">
-                    <span className="bg-white/20 backdrop-blur-md text-white text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1">
-                      <Book size={14} /> {pkg.type}
+                  <div className="absolute top-3 left-3 flex gap-2">
+                    <span className="bg-white/20 backdrop-blur-md text-white text-[10px] md:text-xs font-bold px-2 py-1 rounded-full flex items-center gap-1">
+                      <Book size={12} /> {pkg.type}
                     </span>
-                    <span className="bg-white/20 backdrop-blur-md text-white text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1">
-                      <BarChart3 size={14} /> {pkg.bank}
+                    <span className="bg-white/20 backdrop-blur-md text-white text-[10px] md:text-xs font-bold px-2 py-1 rounded-full flex items-center gap-1">
+                      <BarChart3 size={12} /> {pkg.bank}
                     </span>
                   </div>
-                  <div className="absolute bottom-4 inset-x-0 text-center">
-                    <span className="text-white/80 font-bold tracking-wider text-sm">TRYOUT PACKAGE</span>
+                  <div className="absolute bottom-3 inset-x-0 text-center">
+                    <span className="text-white/80 font-bold tracking-wider text-xs">TRYOUT PACKAGE</span>
                   </div>
                 </div>
                 
                 {/* Card Body */}
-                <div className="p-4 md:p-6 flex flex-col flex-grow">
-                  <h3 className="font-bold text-[18px] md:text-lg text-blue-900 mb-2 leading-tight min-h-[3.5rem]">{pkg.title}</h3>
-                  <div className="text-[11px] md:text-xs text-slate-500 mb-3 md:mb-4">{pkg.type} • {pkg.bank} Soal</div>
-                  <p className="text-slate-600 text-[13px] md:text-sm mb-5 md:mb-6 flex-grow text-justify">{pkg.description}</p>
+                <div className="p-4 md:p-5 flex flex-col flex-grow">
+                  <h3 className="font-bold text-[16px] md:text-lg text-blue-900 mb-1 leading-tight">{pkg.title}</h3>
+                  <div className="text-[11px] md:text-xs text-slate-500 mb-2 md:mb-3">{pkg.type} • {pkg.bank} Soal</div>
+                  <p className="text-slate-600 text-[12px] md:text-sm mb-4 md:mb-5 flex-grow text-justify">{pkg.description}</p>
                   
-                  <div className="flex items-center justify-between border-t border-slate-100 mt-auto pt-4 md:pt-5">
+                  <div className="flex items-center justify-between border-t border-slate-100 mt-auto pt-3 md:pt-4">
                     <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-emerald-50 text-emerald-700 text-[12px] md:text-sm font-bold rounded-full border border-emerald-100">
                       <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
                       Tersedia
                     </div>
-                    <a href="https://masuk-unhan.myr.id/bootcamp/" target="_blank" rel="noopener noreferrer" className="bg-blue-50 text-blue-700 text-[13px] md:text-sm font-semibold px-4 h-10 flex items-center justify-center rounded-lg hover:bg-blue-100 transition-colors gap-2">
+                    <a href="https://app.masukunhan.com/auth/register" target="_blank" rel="noopener noreferrer" className="bg-blue-50 text-blue-700 text-[13px] md:text-sm font-semibold px-4 h-10 flex items-center justify-center rounded-lg hover:bg-blue-100 transition-colors gap-2">
                       <LogIn size={16} /> Daftar
                     </a>
                   </div>
