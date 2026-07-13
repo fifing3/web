@@ -28,10 +28,10 @@ export default function Modul() {
       </div>
 
       {/* Header */}
-      <section className="bg-blue-900 pt-12 md:pt-16 pb-16 md:pb-24 px-4 text-center">
+      <section className="bg-blue-900 pt-8 md:pt-16 pb-12 md:pb-24 px-4 text-center">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-[28px] md:text-5xl font-bold text-white mb-4 md:mb-6 tracking-tight">Semua Modul</h1>
-          <p className="text-blue-100 text-[14px] md:text-lg mb-8 md:mb-10 leading-relaxed px-2">
+          <p className="text-blue-100 text-[15px] md:text-lg mb-6 md:mb-10 leading-relaxed px-2">
             Pelajari seluruh materi persiapan seleksi UNHAN dengan modul yang disusun secara sistematis dan mudah dipahami.
           </p>
           
@@ -41,7 +41,7 @@ export default function Modul() {
             </div>
             <input
               type="text"
-              className="block w-full pl-11 pr-4 py-4 bg-white border-0 rounded-2xl text-slate-900 placeholder-slate-500 focus:ring-4 focus:ring-blue-500/30 transition-shadow shadow-lg"
+              className="block w-full pl-11 pr-4 py-3 md:py-4 bg-white border-0 rounded-2xl text-slate-900 placeholder-slate-500 focus:ring-4 focus:ring-blue-500/30 transition-shadow shadow-lg"
               placeholder="Cari modul (contoh: TPA, Bahasa Inggris)..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
@@ -53,7 +53,7 @@ export default function Modul() {
       {/* Content */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-10 w-full">
         {filteredModules.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
             {filteredModules.map((modul, idx) => (
               <div key={idx} className="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col group">
                 <div className="h-32 bg-slate-100 relative overflow-hidden flex items-center justify-center p-4 text-slate-400 group-hover:bg-blue-50 transition-colors">
@@ -86,7 +86,7 @@ export default function Modul() {
             ))}
           </div>
         ) : (
-          <div className="bg-white rounded-3xl p-16 text-center border border-slate-200 shadow-sm mt-8">
+          <div className="bg-white rounded-3xl p-8 md:p-16 text-center border border-slate-200 shadow-sm mt-8">
             <div className="w-24 h-24 bg-blue-50 text-blue-300 rounded-full flex items-center justify-center mx-auto mb-6">
               <Search size={40} />
             </div>

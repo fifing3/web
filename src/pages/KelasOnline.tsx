@@ -28,10 +28,10 @@ export default function KelasOnline() {
       </div>
 
       {/* Header */}
-      <section className="bg-blue-50 pt-12 md:pt-16 pb-16 md:pb-24 px-4 text-center border-b border-slate-200">
+      <section className="bg-blue-50 pt-8 md:pt-16 pb-12 md:pb-24 px-4 text-center border-b border-slate-200">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-[28px] md:text-5xl font-bold text-blue-900 mb-4 md:mb-6 tracking-tight">Kelas Online</h1>
-          <p className="text-slate-600 text-[14px] md:text-lg mb-8 md:mb-10 leading-relaxed px-2">
+          <p className="text-slate-600 text-[15px] md:text-lg mb-6 md:mb-10 leading-relaxed px-2">
             Belajar langsung bersama mentor berpengalaman untuk menghadapi seleksi UNHAN.
           </p>
           
@@ -41,7 +41,7 @@ export default function KelasOnline() {
             </div>
             <input
               type="text"
-              className="block w-full pl-11 pr-4 py-4 bg-white border border-slate-200 rounded-2xl text-slate-900 placeholder-slate-500 focus:ring-4 focus:ring-blue-500/30 transition-shadow shadow-sm"
+              className="block w-full pl-11 pr-4 py-3 md:py-4 bg-white border border-slate-200 rounded-2xl text-slate-900 placeholder-slate-500 focus:ring-4 focus:ring-blue-500/30 transition-shadow shadow-sm"
               placeholder="Cari kelas (contoh: TPA Intensif)..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
@@ -53,7 +53,7 @@ export default function KelasOnline() {
       {/* Content */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-10 w-full">
         {filteredClasses.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
             {filteredClasses.map((cls, idx) => (
               <div key={idx} className="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col group">
                 <div className="h-32 bg-slate-100 relative overflow-hidden">
@@ -103,7 +103,7 @@ export default function KelasOnline() {
             ))}
           </div>
         ) : (
-          <div className="bg-white rounded-3xl p-16 text-center border border-slate-200 shadow-sm mt-8">
+          <div className="bg-white rounded-3xl p-8 md:p-16 text-center border border-slate-200 shadow-sm mt-8">
             <div className="w-24 h-24 bg-blue-50 text-blue-300 rounded-full flex items-center justify-center mx-auto mb-6">
               <Search size={40} />
             </div>

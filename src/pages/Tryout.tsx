@@ -28,11 +28,11 @@ export default function Tryout() {
       </div>
 
       {/* Header */}
-      <section className="bg-slate-900 pt-12 md:pt-16 pb-16 md:pb-24 px-4 text-center relative overflow-hidden">
+      <section className="bg-slate-900 pt-8 md:pt-16 pb-12 md:pb-24 px-4 text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-blue-900/20 mix-blend-overlay pointer-events-none"></div>
         <div className="max-w-3xl mx-auto relative z-10">
           <h1 className="text-[28px] md:text-5xl font-bold text-white mb-4 md:mb-6 tracking-tight">Paket Tryout</h1>
-          <p className="text-slate-300 text-[14px] md:text-lg mb-8 md:mb-10 leading-relaxed px-2">
+          <p className="text-slate-300 text-[15px] md:text-lg mb-6 md:mb-10 leading-relaxed px-2">
             Latihan soal sesuai sistem seleksi UNHAN lengkap dengan pembahasan dan nilai.
           </p>
           
@@ -42,7 +42,7 @@ export default function Tryout() {
             </div>
             <input
               type="text"
-              className="block w-full pl-11 pr-4 py-4 bg-white/10 border border-white/20 rounded-2xl text-white placeholder-slate-400 focus:bg-white focus:text-slate-900 focus:placeholder-slate-500 focus:ring-4 focus:ring-blue-500/30 transition-all shadow-lg backdrop-blur-md"
+              className="block w-full pl-11 pr-4 py-3 md:py-4 bg-white/10 border border-white/20 rounded-2xl text-white placeholder-slate-400 focus:bg-white focus:text-slate-900 focus:placeholder-slate-500 focus:ring-4 focus:ring-blue-500/30 transition-all shadow-lg backdrop-blur-md"
               placeholder="Cari paket tryout..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
@@ -54,7 +54,7 @@ export default function Tryout() {
       {/* Content */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-10 w-full">
         {filteredPackages.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
             {filteredPackages.map((pkg, idx) => (
               <div key={idx} className="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col group">
                 <div className="h-32 bg-gradient-to-r from-blue-600 to-blue-800 relative p-5 md:p-6 flex flex-col justify-end text-white">
@@ -101,7 +101,7 @@ export default function Tryout() {
             ))}
           </div>
         ) : (
-          <div className="bg-white rounded-3xl p-16 text-center border border-slate-200 shadow-sm mt-8">
+          <div className="bg-white rounded-3xl p-8 md:p-16 text-center border border-slate-200 shadow-sm mt-8">
             <div className="w-24 h-24 bg-blue-50 text-blue-300 rounded-full flex items-center justify-center mx-auto mb-6">
               <Search size={40} />
             </div>

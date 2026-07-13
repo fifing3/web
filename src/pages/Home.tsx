@@ -39,7 +39,7 @@ export default function Home() {
       </section>
 
       {/* Hero Section */}
-      <section className="pt-6 md:pt-10 pb-10 md:pb-12 px-4 relative overflow-hidden bg-gradient-to-b from-transparent to-slate-50">
+      <section className="pt-2 md:pt-10 pb-5 md:pb-12 px-4 relative overflow-hidden bg-gradient-to-b from-transparent to-slate-50">
         <div className="max-w-5xl mx-auto relative z-10">
           <div className="bg-gradient-to-br from-white to-blue-50 rounded-3xl p-8 md:p-12 shadow-xl shadow-blue-900/5 text-center border border-blue-50">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-100 text-slate-600 text-sm font-bold mb-4">
@@ -51,7 +51,7 @@ export default function Home() {
               Selamat Datang Di<br/>Bimbel Masuk Unhan
             </h1>
             
-            <p className="text-slate-600 text-[15px] md:text-lg max-w-3xl mx-auto mb-6 md:mb-8 leading-relaxed text-center">
+            <p className="text-slate-600 text-[15px] md:text-lg max-w-3xl mx-auto mb-5 md:mb-8 leading-relaxed text-center">
               Program belajar intensif & interaktif persiapan seleksi D3, S1 & S2 Unhan RI. Tersedia kelas private, kelas intensif, tryout berkala, dan modul lengkap dengan bimbingan mahasiswa & alumni berpengalaman
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-4">
@@ -67,13 +67,13 @@ export default function Home() {
           </div>
 
           {/* Stats Row */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-4 md:mt-6">
             <div className="bg-gradient-to-br from-white to-blue-50 rounded-2xl p-4 md:p-6 flex items-center gap-4 shadow-sm border border-slate-100">
               <div className="w-12 h-12 bg-blue-900 rounded-xl flex items-center justify-center text-white shrink-0">
                 <Book size={24} />
               </div>
               <div>
-                <div className="font-bold text-[20px] md:text-2xl text-blue-900">16</div>
+                <div className="font-bold text-[20px] md:text-2xl text-blue-900">10</div>
                 <div className="text-slate-500 text-[12px] md:text-sm font-medium">Paket tersedia</div>
               </div>
             </div>
@@ -82,7 +82,7 @@ export default function Home() {
                 <MonitorPlay size={24} />
               </div>
               <div>
-                <div className="font-bold text-[20px] md:text-2xl text-blue-900">1</div>
+                <div className="font-bold text-[20px] md:text-2xl text-blue-900">3</div>
                 <div className="text-slate-500 text-[12px] md:text-sm font-medium">Kelas online</div>
               </div>
             </div>
@@ -91,8 +91,8 @@ export default function Home() {
                 <ShieldCheck size={24} />
               </div>
               <div>
-                <div className="font-bold text-[20px] md:text-2xl text-blue-900">3</div>
-                <div className="text-slate-500 text-[12px] md:text-sm font-medium">Modul</div>
+                <div className="font-bold text-[20px] md:text-2xl text-blue-900">12</div>
+                <div className="text-slate-500 text-[12px] md:text-sm font-medium">Modul Eksklusif</div>
               </div>
             </div>
           </div>
@@ -100,9 +100,9 @@ export default function Home() {
       </section>
 
       {/* Fitur Unggulan */}
-      <section id="fitur" className="py-8 md:py-12 bg-blue-900 px-4">
+      <section id="fitur" className="py-5 md:py-12 bg-blue-900 px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-6 md:mb-8">
+          <div className="text-center mb-5 md:mb-8">
             <h2 className="text-[22px] md:text-4xl font-bold text-white mb-2 md:mb-3">Fitur Unggulan</h2>
             <p className="text-blue-100 text-[14px] md:text-base max-w-4xl mx-auto text-center">
               Bimbel online fokus persiapan Masuk Universitas Pertahanan dengan sistem terarah, materi lengkap, dan pengajar alumni Unhan berpengalaman.
@@ -126,17 +126,17 @@ export default function Home() {
       </section>
 
       {/* Tentang Kami */}
-      <section id="tentang" className="py-8 md:py-12 px-4 bg-slate-50">
+      <section id="tentang" className="py-5 md:py-12 px-4 bg-slate-50">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-6 md:mb-8">
+          <div className="text-center mb-5 md:mb-8">
             <h2 className="text-[22px] md:text-4xl font-bold text-blue-900 mb-2 md:mb-3">Tentang Kami</h2>
             <p className="text-slate-600 text-[14px] md:text-base max-w-5xl mx-auto text-center">
               Lebih dari 1000+ peserta sudah mendaftar di Bimbingan Belajar Masuk Unhan. Belajar efektif bareng kami bersama alumni Unhan dan mentor profesional. Bimbel Masuk Unhan by Prodtech menyediakan layanan bimbingan program Vokasi (D3), Sarjana (S1) dan magister (S2) yang dirancang khusus untuk membantu siswa lolos seleksi/tes Universitas Pertahanan RI (Unhan). Kami hadir dengan pendekatan online interaktif, intensif, dan komprehensif.
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 items-center">
-            <div className="bg-gradient-to-br from-white to-blue-50 rounded-3xl overflow-hidden shadow-xl shadow-blue-900/5 border border-blue-50 flex items-center justify-center aspect-square md:aspect-auto md:h-[400px] lg:h-full relative group">
-              <img src="/lulus-unhan.png" alt="40+ Peserta Alumni Lolos Unhan" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div className="bg-gradient-to-br from-white to-blue-50 rounded-3xl overflow-hidden shadow-xl shadow-blue-900/5 border border-blue-50 flex items-center justify-center md:h-[400px] lg:h-full relative group">
+              <img src="/lulus-unhan.png" alt="40+ Peserta Alumni Lolos Unhan" className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="bg-gradient-to-br from-white to-blue-50 rounded-3xl p-5 md:p-8 shadow-xl shadow-blue-900/5 border border-blue-50">
               <h3 className="text-[20px] md:text-2xl font-bold text-blue-900 mb-3 md:mb-4">Mengapa Memilih Kami?</h3>
@@ -166,9 +166,9 @@ export default function Home() {
       </section>
 
       {/* Modul Pembelajaran */}
-      <section id="modul" className="py-8 md:py-12 bg-blue-900 px-4">
+      <section id="modul" className="py-5 md:py-12 bg-blue-900 px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6 md:mb-8">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-5 md:mb-8">
             <div className="text-left">
               <h2 className="text-[22px] md:text-4xl font-bold text-white mb-2 md:mb-3">Modul Pembelajaran</h2>
               <p className="text-blue-100 text-[14px] md:text-base max-w-2xl text-justify sm:text-left">
@@ -180,7 +180,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5">
             {modules.map((modul, idx) => (
               <div key={idx} className="bg-gradient-to-br from-white to-blue-50 rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-shadow flex flex-col">
                 {/* Card Header/Banner */}
@@ -222,9 +222,9 @@ export default function Home() {
       </section>
 
       {/* Paket Tryout */}
-      <section id="paket" className="py-8 md:py-12 px-4 bg-white">
+      <section id="paket" className="py-5 md:py-12 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6 md:mb-8">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-5 md:mb-8">
             <div className="text-left">
               <h2 className="text-[22px] md:text-4xl font-bold text-blue-900 mb-2 md:mb-3">Paket Tryout</h2>
               <p className="text-slate-600 text-[14px] md:text-base max-w-2xl text-justify sm:text-left">
@@ -236,7 +236,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5">
             {packages.map((pkg, idx) => (
               <div key={idx} className="bg-gradient-to-br from-white to-blue-50 rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-shadow flex flex-col">
                 {/* Card Header/Banner */}
@@ -278,9 +278,9 @@ export default function Home() {
       </section>
 
       {/* Kelas Online */}
-      <section id="kelas" className="py-8 md:py-12 px-4 bg-slate-50">
+      <section id="kelas" className="py-5 md:py-12 px-4 bg-slate-50">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6 md:mb-8">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-5 md:mb-8">
             <div className="text-left">
               <h2 className="text-[22px] md:text-4xl font-bold text-blue-900 mb-2 md:mb-3">Kelas Online</h2>
               <p className="text-slate-600 text-[14px] md:text-base max-w-2xl text-justify sm:text-left">
@@ -292,7 +292,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5">
             {classes.map((cls, idx) => (
               <div key={idx} className="bg-gradient-to-br from-white to-blue-50 rounded-3xl p-5 md:p-6 border border-blue-100 shadow-sm flex flex-col">
                 <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-50 text-blue-700 text-xs font-bold rounded-full mb-3 self-start">
@@ -319,9 +319,9 @@ export default function Home() {
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="py-8 md:py-12 px-4 bg-white">
+      <section id="faq" className="py-5 md:py-12 px-4 bg-white">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-6 md:mb-8">
+          <div className="text-center mb-5 md:mb-8">
             <h2 className="text-[22px] md:text-4xl font-bold text-blue-900 mb-2 md:mb-3">FAQ — Pertanyaan Umum</h2>
             <p className="text-slate-600 text-[14px] md:text-base text-center max-w-2xl mx-auto">
               Beberapa pertanyaan dasar yang sering ditanyakan oleh calon pengguna.

@@ -10,7 +10,7 @@ export default function Layout() {
       {/* Navbar */}
       <nav className="fixed w-full bg-white z-50 shadow-sm top-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-20 items-center">
+          <div className="flex justify-between h-16 md:h-20 items-center">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3">
               <div className="w-10 h-10 flex items-center justify-center shrink-0">
@@ -47,7 +47,7 @@ export default function Layout() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-white border-t border-slate-100 px-4 pt-2 pb-6 shadow-lg">
+          <div className="md:hidden bg-white border-t border-slate-100 px-4 pt-2 pb-4 shadow-lg">
             <div className="flex flex-col space-y-4 font-medium text-base">
               <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="text-slate-900 hover:text-blue-700 block py-2 border-b border-slate-50">Home</Link>
               <a href="/#fitur" onClick={() => setIsMobileMenuOpen(false)} className="text-slate-600 hover:text-blue-700 block py-2 border-b border-slate-50">Fitur</a>
@@ -71,18 +71,18 @@ export default function Layout() {
       </nav>
 
       {/* Main Content Area */}
-      <main className="flex-grow pt-20">
+      <main className="flex-grow pt-16 md:pt-20">
         <Outlet />
       </main>
 
       {/* Footer */}
-      <footer className="bg-blue-900 text-white pt-8 md:pt-12 pb-6 px-4 mt-auto">
+      <footer className="bg-blue-900 text-white pt-6 md:pt-12 pb-5 md:pb-6 px-4 mt-auto">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 md:gap-8 lg:gap-6 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-5 md:gap-8 lg:gap-6 mb-6 md:mb-8">
             
             {/* Brand Column */}
             <div className="lg:col-span-6">
-              <div className="bg-blue-800 rounded-2xl p-5 md:p-6 border border-blue-700">
+              <div className="bg-blue-800 rounded-2xl p-4 md:p-6 border border-blue-700">
                 <div className="flex items-center gap-3 mb-3 md:mb-4">
                   <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center text-blue-900 shrink-0 p-1">
                     <img src="/logo.png" alt="Logo Bimbel Masuk Unhan" className="w-full h-full object-contain" />
@@ -134,7 +134,7 @@ export default function Layout() {
               </a>
             </div>
           </div>
-          <div className="border-t border-blue-800 pt-8 text-center text-blue-300 text-sm font-medium">
+          <div className="border-t border-blue-800 pt-5 md:pt-8 text-center text-blue-300 text-sm font-medium">
             © 2026 Bimbel Masuk Unhan — Semua Hak Dilindungi.
           </div>
         </div>
