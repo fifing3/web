@@ -28,10 +28,10 @@ export default function Modul() {
       </div>
 
       {/* Header */}
-      <section className="bg-blue-900 pt-16 pb-24 px-4 text-center">
+      <section className="bg-blue-900 pt-12 md:pt-16 pb-16 md:pb-24 px-4 text-center">
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">Semua Modul</h1>
-          <p className="text-blue-100 text-lg mb-10 leading-relaxed">
+          <h1 className="text-[28px] md:text-5xl font-bold text-white mb-4 md:mb-6 tracking-tight">Semua Modul</h1>
+          <p className="text-blue-100 text-[14px] md:text-lg mb-8 md:mb-10 leading-relaxed px-2">
             Pelajari seluruh materi persiapan seleksi UNHAN dengan modul yang disusun secara sistematis dan mudah dipahami.
           </p>
           
@@ -53,36 +53,33 @@ export default function Modul() {
       {/* Content */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-10 w-full">
         {filteredModules.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {filteredModules.map((modul, idx) => (
               <div key={idx} className="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col group">
                 <div className="h-40 bg-slate-100 relative overflow-hidden flex items-center justify-center p-6 text-slate-400 group-hover:bg-blue-50 transition-colors">
                   {modul.type === 'Gratis' ? (
-                     <div className="absolute top-4 right-4 bg-emerald-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+                     <div className="absolute top-4 right-4 bg-emerald-500 text-white text-[10px] md:text-xs font-bold px-3 py-1 rounded-full shadow-sm">
                        GRATIS
                      </div>
                   ) : (
-                     <div className="absolute top-4 right-4 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+                     <div className="absolute top-4 right-4 bg-amber-500 text-white text-[10px] md:text-xs font-bold px-3 py-1 rounded-full shadow-sm">
                        PREMIUM
                      </div>
                   )}
                   <Book size={48} className="text-blue-200 group-hover:scale-110 transition-transform duration-500" />
                 </div>
-                <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="font-bold text-lg text-slate-900 mb-2 leading-tight line-clamp-2">{modul.title}</h3>
-                  <div className="flex items-center gap-4 text-xs text-slate-500 mb-4">
+                <div className="p-4 md:p-6 flex flex-col flex-grow">
+                  <h3 className="font-bold text-[18px] md:text-lg text-slate-900 mb-2 leading-tight line-clamp-2">{modul.title}</h3>
+                  <div className="flex items-center gap-4 text-[11px] md:text-xs text-slate-500 mb-3 md:mb-4">
                     <span className="flex items-center gap-1"><Book size={14} /> {modul.bank}</span>
                     <span className="flex items-center gap-1"><Star size={14} className="text-amber-400" /> 4.9</span>
                   </div>
-                  <p className="text-slate-600 text-sm mb-6 flex-grow line-clamp-3 text-justify">{modul.description}</p>
+                  <p className="text-slate-600 text-[13px] md:text-sm mb-5 md:mb-6 flex-grow line-clamp-3 text-justify">{modul.description}</p>
                   
                   <div className="flex flex-col gap-2 mt-auto">
-                    <button className="w-full bg-blue-700 text-white font-semibold px-4 py-2.5 rounded-xl hover:bg-blue-800 transition-colors flex items-center justify-center gap-2">
-                      <PlayCircle size={18} /> Mulai Belajar
-                    </button>
-                    <button className="w-full bg-slate-50 text-slate-700 font-semibold px-4 py-2.5 rounded-xl hover:bg-slate-100 transition-colors text-center border border-slate-200">
-                      Lihat Detail
-                    </button>
+                    <a href="https://masuk-unhan.myr.id/ebook/" target="_blank" rel="noopener noreferrer" className="w-full bg-blue-700 text-white text-[13px] md:text-sm font-semibold h-11 md:h-auto px-4 py-2.5 rounded-xl hover:bg-blue-800 transition-colors flex items-center justify-center gap-2">
+                      <LogIn size={18} /> Pesan
+                    </a>
                   </div>
                 </div>
               </div>

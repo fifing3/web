@@ -124,10 +124,26 @@ export const faqs = [
   },
   {
     question: "Bagaimana cara daftar?",
-    answer: "Anda dapat mendaftar dengan mengklik tombol 'Daftar' di pojok kanan atas, kemudian mengisi formulir pendaftaran yang disediakan."
+    answer: "Anda dapat mendaftar dengan mengklik tombol 'Daftar' dan mengisi formulir pendaftaran yang disediakan. Anda juga bisa mendaftar dengan menghubungi admin melalui nomor whatsapp"
   },
   {
-    question: "Apakah tersedia paket gratis dan premium?",
-    answer: "Ya, kami menyediakan paket tryout gratis secara berkala dan juga paket premium yang lebih lengkap dan intensif."
+    question: "Apa saja program paket di BMU ini?",
+    answer: (
+      <div className="space-y-1 mt-1">
+        <p>Kami menyediakan program antara lain:</p>
+        <ul className="list-disc pl-5 space-y-1 mt-2">
+          <li><strong>Kelas Private</strong> — 1 Mentor : 1 Siswa, dibimbing hingga lolos.</li>
+          <li><strong>Kelas Intensif</strong> — Pembelajaran terstruktur, mendalam, dan terarah.</li>
+          <li><strong>Kelas Express</strong> — Persiapan cepat dengan materi yang tetap terstruktur.</li>
+          <li><strong>Paket Tryout</strong> — Simulasi tes lengkap disertai analisis hasil belajar.</li>
+          <li><strong>Paket Modul Eksklusif</strong> — Materi lengkap mengacu pada tes tahun-tahun sebelumnya.</li>
+          <li><strong>Paket Tes IQ UNHAN</strong> — Latihan kemampuan kognitif sebagai persiapan tes psikologi UNHAN.</li>
+        </ul>
+      </div>
+    )
+  },
+  {
+    question: "Berapa alumni Bimbel BMU yang lolos tahun 2026?",
+    answer: "Ada 40+ peserta alumni bimbel yang lolos menjadi Kadet UNHAN 2026 yang tersebar dari beberapa prodi mulai dari kedokteran, kedokteran gigi, farmasi, informatika, mesin, sipil, nuklir, fisika, sejarah militer, olahraga, dll"
   }
 ];

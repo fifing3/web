@@ -58,12 +58,12 @@ export default function Layout() {
               <a href="/#faq" onClick={() => setIsMobileMenuOpen(false)} className="text-slate-600 hover:text-blue-700 block py-2 border-b border-slate-50">FAQ</a>
               
               <div className="flex gap-4 pt-4">
-                <button className="flex-1 text-blue-700 font-semibold px-4 py-2 hover:bg-blue-50 border border-blue-200 rounded-lg transition-colors">
+                <a href="https://masuk-unhan.myr.id/bootcamp/" target="_blank" rel="noopener noreferrer" className="flex-1 text-center text-blue-700 font-semibold px-4 py-2 hover:bg-blue-50 border border-blue-200 rounded-lg transition-colors">
                   Login
-                </button>
-                <button className="flex-1 bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg hover:bg-blue-800 transition-colors">
+                </a>
+                <a href="https://masuk-unhan.myr.id/bootcamp/" target="_blank" rel="noopener noreferrer" className="flex-1 text-center bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg hover:bg-blue-800 transition-colors">
                   Daftar
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -76,24 +76,24 @@ export default function Layout() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-blue-900 text-white pt-12 pb-6 px-4 mt-auto">
+      <footer className="bg-blue-900 text-white pt-8 md:pt-12 pb-6 px-4 mt-auto">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-6 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 md:gap-8 lg:gap-6 mb-8">
             
             {/* Brand Column */}
             <div className="lg:col-span-6">
-              <div className="bg-blue-800 rounded-2xl p-6 border border-blue-700">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center text-blue-900">
+              <div className="bg-blue-800 rounded-2xl p-5 md:p-6 border border-blue-700">
+                <div className="flex items-center gap-3 mb-3 md:mb-4">
+                  <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center text-blue-900 shrink-0">
                     <ShieldCheck size={24} />
                   </div>
                   <div className="font-bold flex flex-col">
-                    <span className="text-lg leading-tight text-white">Bimbel Masuk</span>
-                    <span className="text-sm text-blue-200 leading-tight">UNIVERSITAS PERTAHANAN</span>
+                    <span className="text-[16px] md:text-lg leading-tight text-white">Bimbel Masuk</span>
+                    <span className="text-[12px] md:text-sm text-blue-200 leading-tight">UNIVERSITAS PERTAHANAN</span>
                   </div>
                 </div>
-                <p className="text-blue-100 text-sm leading-relaxed text-justify">
-                  Platform latihan dan pembelajaran online yang dirancang untuk membantu peserta seleksi belajar lebih terstruktur, terukur, dan siap menghadapi ujian sesungguhnya.
+                <p className="text-blue-100 text-[13px] md:text-sm leading-relaxed text-justify">
+                  Platform latihan dan pembelajaran online yang dirancang untuk membantu peserta seleksi belajar lebih terstruktur, terukur, dan siap menghadapi ujian sesungguhnya serta dibimbingan oleh mahasiswa dan alumni UNHAN yang berpengalaman.
                 </p>
               </div>
             </div>
@@ -102,33 +102,33 @@ export default function Layout() {
             <div className="lg:col-span-6 space-y-3">
               <h4 className="font-bold text-lg mb-4">Hubungi Kami</h4>
               
-              <a href="#" className="flex items-center gap-4 bg-blue-800 p-4 rounded-xl hover:bg-blue-700 border border-blue-700 transition-colors group">
+              <a href="https://wa.me/6285156574081?text=Hello,%20*BMU*%0ASaya%20ingin%20konsultasi%20mengenai%20Bimbel%20Masuk%20Unhan.%20Mohon%20informasi%20lebih%20lanjut.%20Terimakasih" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-blue-800 p-4 rounded-xl hover:bg-blue-700 border border-blue-700 transition-colors group">
                 <div className="w-10 h-10 bg-[#25D366] rounded-lg flex items-center justify-center text-white">
                   <Phone size={20} />
                 </div>
                 <div className="flex-grow">
                   <div className="font-bold text-sm">WhatsApp Business</div>
-                  <div className="text-blue-200 text-sm">0813-1399-584</div>
+                  <div className="text-blue-200 text-sm">0851-5657-4081</div>
                 </div>
                 <ChevronDown className="transform -rotate-90 text-blue-300 group-hover:text-white transition-colors" size={20} />
               </a>
-              <a href="#" className="flex items-center gap-4 bg-blue-800 p-4 rounded-xl hover:bg-blue-700 border border-blue-700 transition-colors group">
+              <a href="mailto:bimbelmasukunhan@gmail.com" className="flex items-center gap-4 bg-blue-800 p-4 rounded-xl hover:bg-blue-700 border border-blue-700 transition-colors group">
                 <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center text-white">
                   <Mail size={20} />
                 </div>
                 <div className="flex-grow">
                   <div className="font-bold text-sm">Email</div>
-                  <div className="text-blue-200 text-sm">bimbelunhan@gmail.com</div>
+                  <div className="text-blue-200 text-sm">bimbelmasukunhan@gmail.com</div>
                 </div>
                 <ChevronDown className="transform -rotate-90 text-blue-300 group-hover:text-white transition-colors" size={20} />
               </a>
-              <a href="#" className="flex items-center gap-4 bg-blue-800 p-4 rounded-xl hover:bg-blue-700 border border-blue-700 transition-colors group">
+              <a href="https://instagram.com/masukunhan" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-blue-800 p-4 rounded-xl hover:bg-blue-700 border border-blue-700 transition-colors group">
                 <div className="w-10 h-10 bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-500 rounded-lg flex items-center justify-center text-white">
                   <Instagram size={20} />
                 </div>
                 <div className="flex-grow">
                   <div className="font-bold text-sm">Instagram</div>
-                  <div className="text-blue-200 text-sm">@bimbelmasukunhan</div>
+                  <div className="text-blue-200 text-sm">@masukunhan</div>
                 </div>
                 <ChevronDown className="transform -rotate-90 text-blue-300 group-hover:text-white transition-colors" size={20} />
               </a>
