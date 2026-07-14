@@ -118,7 +118,7 @@ export default function Layout() {
                 </div>
                 <div className="flex-grow">
                   <div className="font-bold text-sm">Email</div>
-                  <div className="text-blue-200 text-sm">bimbelmasukunhan@gmail.com</div>
+                  <div className="text-blue-200 text-[13px] md:text-sm break-all">bimbelmasukunhan@gmail.com</div>
                 </div>
                 <ChevronDown className="transform -rotate-90 text-blue-300 group-hover:text-white transition-colors" size={20} />
               </a>
