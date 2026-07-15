@@ -58,17 +58,17 @@ export default function Home() {
       {/* Hero Section */}
       <section className="pt-2 md:pt-10 pb-5 md:pb-12 px-4 relative overflow-hidden bg-gradient-to-b from-transparent to-slate-50">
         <div className="max-w-5xl mx-auto relative z-10">
-          <div className="bg-gradient-to-br from-white to-blue-50 rounded-3xl p-8 md:p-12 shadow-xl shadow-blue-900/5 text-center border border-blue-50">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-100 text-slate-600 text-sm font-bold mb-4">
-              <span className="w-2 h-2 rounded-full bg-blue-600"></span>
+          <div className="bg-gradient-to-br from-white to-blue-50 rounded-3xl p-5 md:p-12 shadow-xl shadow-blue-900/5 text-center border border-blue-50">
+            <div className="inline-flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-1 md:py-1.5 rounded-full bg-slate-100 text-slate-600 text-[11px] md:text-sm font-bold mb-3 md:mb-4">
+              <span className="w-1.5 md:w-2 h-1.5 md:h-2 rounded-full bg-blue-600"></span>
               BIMBEL TERBESAR MASUK UNHAN
             </div>
 
-            <h1 className="text-[28px] md:text-5xl lg:text-6xl font-extrabold text-blue-900 tracking-tight mb-4 uppercase">
+            <h1 className="text-[22px] sm:text-[28px] md:text-5xl lg:text-6xl font-extrabold text-blue-900 tracking-tight mb-3 md:mb-4 uppercase leading-snug md:leading-tight">
               Selamat Datang Di<br/>Bimbel Masuk Unhan
             </h1>
             
-            <p className="text-slate-600 text-[15px] md:text-lg max-w-3xl mx-auto mb-5 md:mb-8 leading-relaxed text-center">
+            <p className="text-slate-600 text-[13px] sm:text-[15px] md:text-lg max-w-3xl mx-auto mb-5 md:mb-8 leading-relaxed text-center">
               Program belajar intensif & interaktif persiapan seleksi D3, S1 & S2 Unhan RI. Tersedia kelas private, kelas intensif, tryout berkala, dan modul lengkap dengan bimbingan mahasiswa & alumni berpengalaman
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-4">
@@ -84,32 +84,32 @@ export default function Home() {
           </div>
 
           {/* Stats Row */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-4 md:mt-6">
-            <div className="bg-gradient-to-br from-white to-blue-50 rounded-2xl p-4 md:p-6 flex items-center gap-4 shadow-sm border border-slate-100">
-              <div className="w-12 h-12 bg-blue-900 rounded-xl flex items-center justify-center text-white shrink-0">
-                <Book size={24} />
+          <div className="grid grid-cols-3 gap-2 md:gap-3 mt-4 md:mt-6">
+            <div className="bg-gradient-to-br from-white to-blue-50 rounded-2xl p-2 md:p-6 flex flex-col md:flex-row items-center justify-center md:justify-start gap-1 md:gap-4 shadow-sm border border-slate-100 text-center md:text-left">
+              <div className="w-8 h-8 md:w-12 md:h-12 bg-blue-900 rounded-xl flex items-center justify-center text-white shrink-0">
+                <Book className="w-4 h-4 md:w-6 md:h-6" />
               </div>
               <div>
-                <div className="font-bold text-[20px] md:text-2xl text-blue-900">10</div>
-                <div className="text-slate-500 text-[12px] md:text-sm font-medium">Paket tersedia</div>
+                <div className="font-bold text-[16px] md:text-2xl text-blue-900 leading-tight">10</div>
+                <div className="text-slate-500 text-[10px] md:text-sm font-medium leading-tight">Paket</div>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-white to-blue-50 rounded-2xl p-4 md:p-6 flex items-center gap-4 shadow-sm border border-slate-100">
-              <div className="w-12 h-12 bg-blue-900 rounded-xl flex items-center justify-center text-white shrink-0">
-                <MonitorPlay size={24} />
+            <div className="bg-gradient-to-br from-white to-blue-50 rounded-2xl p-2 md:p-6 flex flex-col md:flex-row items-center justify-center md:justify-start gap-1 md:gap-4 shadow-sm border border-slate-100 text-center md:text-left">
+              <div className="w-8 h-8 md:w-12 md:h-12 bg-blue-900 rounded-xl flex items-center justify-center text-white shrink-0">
+                <MonitorPlay className="w-4 h-4 md:w-6 md:h-6" />
               </div>
               <div>
-                <div className="font-bold text-[20px] md:text-2xl text-blue-900">3</div>
-                <div className="text-slate-500 text-[12px] md:text-sm font-medium">Kelas online</div>
+                <div className="font-bold text-[16px] md:text-2xl text-blue-900 leading-tight">3</div>
+                <div className="text-slate-500 text-[10px] md:text-sm font-medium leading-tight">Kelas</div>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-white to-blue-50 rounded-2xl p-4 md:p-6 flex items-center gap-4 shadow-sm border border-slate-100">
-              <div className="w-12 h-12 bg-blue-900 rounded-xl flex items-center justify-center text-white shrink-0">
-                <ShieldCheck size={24} />
+            <div className="bg-gradient-to-br from-white to-blue-50 rounded-2xl p-2 md:p-6 flex flex-col md:flex-row items-center justify-center md:justify-start gap-1 md:gap-4 shadow-sm border border-slate-100 text-center md:text-left">
+              <div className="w-8 h-8 md:w-12 md:h-12 bg-blue-900 rounded-xl flex items-center justify-center text-white shrink-0">
+                <ShieldCheck className="w-4 h-4 md:w-6 md:h-6" />
               </div>
               <div>
-                <div className="font-bold text-[20px] md:text-2xl text-blue-900">12</div>
-                <div className="text-slate-500 text-[12px] md:text-sm font-medium">Modul Eksklusif</div>
+                <div className="font-bold text-[16px] md:text-2xl text-blue-900 leading-tight">12</div>
+                <div className="text-slate-500 text-[10px] md:text-sm font-medium leading-tight">Modul</div>
               </div>
             </div>
           </div>
@@ -152,7 +152,7 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 items-center">
-            <div className="bg-gradient-to-br from-white to-blue-50 rounded-3xl overflow-hidden shadow-xl shadow-blue-900/5 border border-blue-50 flex items-center justify-center md:h-[400px] lg:h-full relative group">
+            <div className="bg-gradient-to-br from-white to-blue-50 rounded-3xl overflow-hidden shadow-xl shadow-blue-900/5 border border-blue-50 flex items-center justify-center min-h-[250px] md:min-h-0 md:h-[400px] lg:h-full relative group">
               <img src="/lulus-unhan.png" alt="40+ Peserta Alumni Lolos Unhan" className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="bg-gradient-to-br from-white to-blue-50 rounded-3xl p-5 md:p-8 shadow-xl shadow-blue-900/5 border border-blue-50">
