@@ -153,7 +153,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 items-center">
             <div className="bg-gradient-to-br from-white to-blue-50 rounded-3xl overflow-hidden shadow-xl shadow-blue-900/5 border border-blue-50 flex items-center justify-center md:h-[400px] lg:h-full relative group">
-              <img src="/lulus-unhan.png" alt="40+ Peserta Alumni Lolos Unhan" loading="lazy" width="600" height="400" className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500" />
+              <img src="/lulus-unhan.png" alt="40+ Peserta Alumni Lolos Unhan" className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="bg-gradient-to-br from-white to-blue-50 rounded-3xl p-5 md:p-8 shadow-xl shadow-blue-900/5 border border-blue-50">
               <h3 className="text-[20px] md:text-2xl font-bold text-blue-900 mb-3 md:mb-4">Mengapa Memilih Kami?</h3>
