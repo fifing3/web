@@ -109,11 +109,11 @@ export default function KelasOnline() {
                       <span className="font-medium">Mentor Alumni UNHAN</span>
                     </div>
                     <div className="flex items-center gap-3 text-[13px] md:text-sm text-slate-600">
-                      <Calendar size={16} className="text-slate-400 shrink-0" /> Setiap Sabtu & Minggu
+                      <Calendar size={16} className="text-slate-400 shrink-0" /> Terjadwal
                     </div>
                     <div className="flex items-center justify-between text-[13px] md:text-sm text-slate-600">
-                      <span className="flex items-center gap-3"><Clock size={16} className="text-slate-400 shrink-0" /> 90 Menit</span>
-                      <span className="flex items-center gap-1 bg-slate-100 px-2 py-0.5 rounded-md text-[11px] md:text-xs"><Users size={12} /> 25/30</span>
+                      <span className="flex items-center gap-3"><Clock size={16} className="text-slate-400 shrink-0" /> 120 Menit</span>
+                      <span className="flex items-center gap-1 bg-slate-100 px-2 py-0.5 rounded-md text-[11px] md:text-xs"><Users size={12} /> 20</span>
                     </div>
                   </div>
                   
