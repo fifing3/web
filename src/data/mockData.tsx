@@ -93,6 +93,46 @@ export const modules = [
     type: "MODUL",
     bank: "PANDUAN",
     price: "Rp15.000"
+  },
+  {
+    title: "Modul Tes Offline Pusat - D3/S1 UNHAN",
+    description: "Kumpulan materi dan simulasi tes offline pusat. Materi berdasarkan pengalaman tahun sebelumnya.",
+    icon: <Book className="w-8 h-8 text-blue-700" />,
+    image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=2073&auto=format&fit=crop",
+    gradient: "from-blue-700 to-blue-900",
+    type: "MODUL",
+    bank: "LENGKAP",
+    price: "Rp25.000"
+  },
+  {
+    title: "Tes Potensi Akademik (TPA) - S2/S3 UNHAN",
+    description: "Kumpulan materi dan latihan soal dan pembahasan TPA UNHAN. Materi berdasarkan pengalaman tahun sebelumnya.",
+    icon: <Book className="w-8 h-8 text-blue-700" />,
+    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop",
+    gradient: "from-blue-700 to-blue-900",
+    type: "MODUL",
+    bank: "LENGKAP",
+    price: "Rp25.000"
+  },
+  {
+    title: "Tes Kamampuan Bahasa Inggris (TKBI) - S2/S3 UNHAN",
+    description: "Kumpulan materi dan latihan soal dan pembahasan TKBI UNHAN. Materi berdasarkan pengalaman tahun sebelumnya.",
+    icon: <Book className="w-8 h-8 text-blue-700" />,
+    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop",
+    gradient: "from-blue-700 to-blue-900",
+    type: "MODUL",
+    bank: "LENGKAP",
+    price: "Rp25.000"
+  },
+  {
+    title: "Modul Tes Offline Pusat - S2/S3 UNHAN",
+    description: "Kumpulan materi dan simulasi tes offline pusat. Materi berdasarkan pengalaman tahun sebelumnya.",
+    icon: <Book className="w-8 h-8 text-blue-700" />,
+    image: "https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=2070&auto=format&fit=crop",
+    gradient: "from-blue-700 to-blue-900",
+    type: "MODUL",
+    bank: "LENGKAP",
+    price: "Rp25.000"
   }
 ];
 

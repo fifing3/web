@@ -198,7 +198,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5">
-            {modules.map((modul, idx) => (
+            {modules.slice(0, 3).map((modul, idx) => (
               <div key={idx} className="bg-gradient-to-br from-white to-blue-50 rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-shadow flex flex-col">
                 {/* Card Header/Banner */}
                 <div className={`h-32 relative bg-gradient-to-br ${modul.gradient}`}>
