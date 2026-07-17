@@ -65,7 +65,7 @@ export const packages = [
 
 export const modules = [
   {
-    title: "Modul Tes Kompetensi Dasar (TKD) UNHAN",
+    title: "Modul Tes Kompetensi Dasar (TKD) S1 UNHAN",
     description: "Materi lengkap TWK, TIU, dan TKP sesuai kisi-kisi terbaru. Materi berdasarkan pengalaman peserta tes tahun sebelumnya.",
     icon: <Book className="w-8 h-8 text-blue-700" />,
     image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=2073&auto=format&fit=crop",
@@ -75,7 +75,7 @@ export const modules = [
     price: "Rp25.000"
   },
   {
-    title: "Modul Tes Pemeriksaan Psikologi (RIKPSI) UNHAN",
+    title: "Modul Tes Pemeriksaan Psikologi (RIKPSI) D3/S1 UNHAN",
     description: "Kumpulan materi dan latihan soal psikotes Universitas Pertahanan. Materi berdasarkan pengalaman peserta tes tahun sebelumnya.",
     icon: <Book className="w-8 h-8 text-blue-700" />,
     image: "https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=2070&auto=format&fit=crop",
