@@ -78,11 +78,11 @@ export default function Layout() {
       {/* Footer */}
       <footer className="bg-blue-900 text-white pt-6 md:pt-12 pb-5 md:pb-6 px-4 mt-auto">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-5 md:gap-8 lg:gap-6 mb-6 md:mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-3 md:gap-5 lg:gap-4 mb-6 md:mb-8">
             
             {/* Brand Column */}
             <div className="lg:col-span-6">
-              <div className="bg-blue-800 rounded-2xl p-4 md:p-6 border border-blue-700">
+              <div className="bg-blue-800 rounded-2xl p-4 md:p-6 border border-blue-700 h-full flex flex-col justify-center">
                 <div className="flex items-center gap-3 mb-3 md:mb-4">
                   <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center text-blue-900 shrink-0 p-1">
                     <img src="/logo.png" alt="Logo Bimbel Masuk Unhan" width="32" height="32" className="w-full h-full object-contain" />
@@ -99,39 +99,54 @@ export default function Layout() {
             </div>
 
             {/* Hubungi Kami Column */}
-            <div className="lg:col-span-6 space-y-3">
-              <h4 className="font-bold text-lg mb-4">Hubungi Kami</h4>
-              
-              <a href="https://wa.me/6285156574081?text=Hello,%20*BMU*%0ASaya%20ingin%20konsultasi%20mengenai%20Bimbel%20Masuk%20Unhan.%20Mohon%20informasi%20lebih%20lanjut.%20Terimakasih" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-blue-800 p-4 rounded-xl hover:bg-blue-700 border border-blue-700 transition-colors group">
-                <div className="w-10 h-10 bg-[#25D366] rounded-lg flex items-center justify-center text-white">
+            <div className="lg:col-span-6">
+              <div className="bg-blue-800 rounded-2xl p-4 md:p-6 border border-blue-700 h-full flex flex-col justify-center">
+                <h4 className="font-bold text-lg mb-4 text-white">Hubungi Kami</h4>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              <a href="https://wa.me/6285156574081?text=Hello,%20*BMU*%0ASaya%20ingin%20konsultasi%20mengenai%20Bimbel%20Masuk%20Unhan.%20Mohon%20informasi%20lebih%20lanjut.%20Terimakasih" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-blue-900/50 p-4 rounded-xl hover:bg-blue-700 border border-blue-700 transition-colors group">
+                <div className="w-10 h-10 bg-[#25D366] rounded-lg flex items-center justify-center text-white shrink-0">
                   <Phone size={20} />
                 </div>
                 <div className="flex-grow">
-                  <div className="font-bold text-sm">WhatsApp Business</div>
-                  <div className="text-blue-200 text-sm">0851-5657-4081</div>
+                  <div className="font-bold text-sm text-white">WhatsApp</div>
+                  <div className="text-blue-200 text-[12px]">0851-5657-4081</div>
                 </div>
-                <ChevronDown className="transform -rotate-90 text-blue-300 group-hover:text-white transition-colors" size={20} />
+                <ChevronDown className="transform -rotate-90 text-blue-300 group-hover:text-white transition-colors shrink-0" size={20} />
               </a>
-              <a href="mailto:bimbelmasukunhan@gmail.com" className="flex items-center gap-4 bg-blue-800 p-4 rounded-xl hover:bg-blue-700 border border-blue-700 transition-colors group">
-                <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center text-white">
+              <a href="mailto:bimbelmasukunhan@gmail.com" className="flex items-center gap-4 bg-blue-900/50 p-4 rounded-xl hover:bg-blue-700 border border-blue-700 transition-colors group">
+                <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center text-white shrink-0">
                   <Mail size={20} />
                 </div>
                 <div className="flex-grow">
-                  <div className="font-bold text-sm">Email</div>
-                  <div className="text-blue-200 text-[13px] md:text-sm break-all">bimbelmasukunhan@gmail.com</div>
+                  <div className="font-bold text-sm text-white">Email</div>
+                  <div className="text-blue-200 text-[12px] break-all">bimbelmasukunhan@gmail.com</div>
                 </div>
-                <ChevronDown className="transform -rotate-90 text-blue-300 group-hover:text-white transition-colors" size={20} />
+                <ChevronDown className="transform -rotate-90 text-blue-300 group-hover:text-white transition-colors shrink-0" size={20} />
               </a>
-              <a href="https://instagram.com/masukunhan" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-blue-800 p-4 rounded-xl hover:bg-blue-700 border border-blue-700 transition-colors group">
-                <div className="w-10 h-10 bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-500 rounded-lg flex items-center justify-center text-white">
+              <a href="https://instagram.com/masukunhan" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-blue-900/50 p-4 rounded-xl hover:bg-blue-700 border border-blue-700 transition-colors group">
+                <div className="w-10 h-10 bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-500 rounded-lg flex items-center justify-center text-white shrink-0">
                   <Instagram size={20} />
                 </div>
                 <div className="flex-grow">
-                  <div className="font-bold text-sm">Instagram</div>
-                  <div className="text-blue-200 text-sm">@masukunhan</div>
+                  <div className="font-bold text-sm text-white">Instagram</div>
+                  <div className="text-blue-200 text-[12px]">@masukunhan</div>
                 </div>
-                <ChevronDown className="transform -rotate-90 text-blue-300 group-hover:text-white transition-colors" size={20} />
+                <ChevronDown className="transform -rotate-90 text-blue-300 group-hover:text-white transition-colors shrink-0" size={20} />
               </a>
+              <a href="https://tiktok.com/@masukunhan" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-blue-900/50 p-4 rounded-xl hover:bg-blue-700 border border-blue-700 transition-colors group">
+                <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center text-white shrink-0">
+                  <svg fill="currentColor" viewBox="0 0 24 24" width="20" height="20">
+                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                  </svg>
+                </div>
+                <div className="flex-grow">
+                  <div className="font-bold text-sm text-white">TikTok</div>
+                  <div className="text-blue-200 text-[12px]">@masukunhan</div>
+                </div>
+                <ChevronDown className="transform -rotate-90 text-blue-300 group-hover:text-white transition-colors shrink-0" size={20} />
+              </a>
+              </div>
+              </div>
             </div>
           </div>
           <div className="border-t border-blue-800 pt-5 md:pt-8 text-center text-blue-300 text-sm font-medium">
